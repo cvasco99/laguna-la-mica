@@ -34,6 +34,7 @@ nav ul {
   justify-content: center;
   margin: 0;
   padding: 10px 0;
+  flex-wrap: wrap;
 }
 
 nav li {
@@ -149,6 +150,20 @@ footer {
   z-index: 999;
 }
 
+/* Botón flotante izquierdo */
+.left-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #0077cc;
+  color: white;
+  font-size: 22px;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 999;
+}
+
 /* Lightbox */
 .lightbox {
   position: fixed;
@@ -175,4 +190,69 @@ footer {
   font-size: 40px;
   color: white;
   cursor: pointer;
+}
+
+/* Mejora responsive para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .content-section {
+    padding: 30px 15px;
+  }
+
+  .galeria-grid, .img-interactiva-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-responsive {
+    padding-bottom: 60%;
+  }
+
+  .whatsapp-btn,
+  .left-btn {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .btn-nav-secundario {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+ 
+
+.btn-flotante-superior:hover {
+  background-color: #004d40;
+}
+
+/* Botón en la navbar (junto a Contacto) */
+.btn-nav-secundario {
+  background-color: #004d40;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-nav-secundario:hover {
+  background-color: #002d27;
 }
