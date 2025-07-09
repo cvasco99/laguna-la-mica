@@ -6,6 +6,50 @@
   <title>Laguna La Mica - Reserva Ecológica Antisana</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url('img/fondo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0.7;
+      z-index: -1;
+      filter: brightness(0.6);
+    }
+
+    body {
+      background-color: transparent;
+    }
+
+    .content-section {
+      background-color: rgba(255, 255, 255, 0.88);
+      color: #222;
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    nav {
+      background-color: rgba(0, 105, 92, 0.95);
+    }
+
+    footer {
+      background-color: rgba(0, 77, 64, 0.95);
+    }
+  </style>
 </head>
 <body>
 
@@ -18,6 +62,7 @@
       <li><a href="#galeria">Galería</a></li>
       <li><a href="#video">Video</a></li>
       <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#recomendaciones">Recomendaciones</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
@@ -40,7 +85,6 @@
     <p>
       Su paisaje está caracterizado por amplias áreas de humedales, matorrales y praderas, con formaciones rocosas y vistas espectaculares al volcán Antisana. La laguna también actúa como reguladora del microclima, conservando la humedad y el equilibrio ecológico.
     </p>
-
     <h3>Imágenes de la Laguna</h3>
     <div class="img-interactiva-grid">
       <img src="img/laguna1.jpg" alt="Vista panorámica de la Laguna La Mica" />
@@ -55,24 +99,21 @@
 
     <h3>Fauna</h3>
     <p>
-      La Reserva Ecológica Antisana alberga una rica variedad de fauna típica del páramo andino. En la laguna y sus alrededores es común observar aves como el majestuoso cóndor andino, el curiquingue, zorzales, y diversas especies de patos silvestres que anidan en sus orillas.
-      Entre los mamíferos destacan el venado de cola blanca, el lobo de páramo, y en áreas más alejadas, el oso de anteojos, especie emblemática y en peligro de extinción.
+      En la laguna y sus alrededores es común observar aves como el cóndor andino, el curiquingue, zorzales y especies de patos silvestres. También viven el venado de cola blanca, el lobo de páramo y el oso de anteojos.
     </p>
     <img src="img/aves.jpg" alt="Aves del páramo" class="img-interactiva" />
 
     <h3>Flora</h3>
     <p>
-      La flora de la región está adaptada a las bajas temperaturas y la alta radiación solar. Destacan los frailejones, que son plantas clave para la conservación de agua en el páramo, musgos, líquenes y pastos resistentes.
-      Estas especies forman una cubierta vegetal que sostiene el suelo y protege a la laguna de la erosión, además de servir como refugio para muchas especies animales.
+      La flora está adaptada al frío y la radiación UV. Predominan frailejones, musgos, líquenes y pastos. Estas especies retienen agua y estabilizan el suelo.
     </p>
-    <img src="img/frailejon.jpg" alt="Frailejón, planta típica del páramo" class="img-interactiva" />
+    <img src="img/frailejon.jpg" alt="Frailejón del páramo" class="img-interactiva" />
 
     <h3>Clima</h3>
     <p>
-      El clima en la zona es frío y húmedo, con temperaturas que varían entre 0°C y 10°C, y precipitaciones frecuentes durante el año. La altitud y la ubicación geográfica generan una alta radiación ultravioleta, por lo que es recomendable usar ropa adecuada y protección solar.
+      El clima es frío y húmedo, con temperaturas entre 0°C y 10°C. La radiación solar es alta. Recomendable llevar ropa térmica y protección solar.
     </p>
     <img src="img/clima.jpg" alt="Clima del páramo" class="img-interactiva" />
-
   </section>
 
   <!-- Galería -->
@@ -89,76 +130,51 @@
     </div>
   </section>
 
-  <!-- Video principal -->
+  <!-- Video -->
   <section id="video" class="content-section" data-aos="fade-up">
     <h2>Video documental</h2>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/wajfk2a702o?si=bKrRzLD8BnRfMnta"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      <iframe src="https://www.youtube.com/embed/wajfk2a702o?si=bKrRzLD8BnRfMnta" allowfullscreen></iframe>
     </div>
   </section>
 
-  <!-- Ubicación y segundo video -->
+  <!-- Ubicación y guía -->
   <section id="ubicacion" class="content-section" data-aos="fade-up">
     <h2>¿Cómo llegar?</h2>
     <p>
-      Desde Quito, toma la vía al Valle de los Chillos hasta Pintag, y sigue por la carretera ecológica hasta la entrada de la Reserva Antisana. El trayecto toma entre 1h30 a 2h en vehículo. El acceso es controlado.
+      Desde Quito toma la vía al Valle de los Chillos hacia Pintag, continúa por la carretera ecológica hasta la entrada de la Reserva Antisana. El acceso es controlado.
     </p>
     <div class="mapa">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100572.14829906917!2d-78.29239755358951!3d-0.543311836724657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5cb859988449b%3A0xa9143ae92fe92bf5!2sLaguna%20de%20Mica!5e1!3m2!1ses-419!2sec!4v1752028549728!5m2!1ses-419!2sec"
-        width="100%"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100572.14829906917!2d-78.29239755358951!3d-0.543311836724657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5cb859988449b%3A0xa9143ae92fe92bf5!2sLaguna%20de%20Mica!5e1!3m2!1ses-419!2sec!4v1752028549728!5m2!1ses-419!2sec"
+        width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
     </div>
-
     <div class="video-responsive" style="margin-top: 30px;">
-      <h3>Video guía para llegar a Laguna La Mica</h3>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/JEFYMIsFQrE?si=RKJHPPGtQ-lNvI-3"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      <h3>Video guía para llegar</h3>
+      <iframe src="https://www.youtube.com/embed/JEFYMIsFQrE?si=RKJHPPGtQ-lNvI-3" allowfullscreen></iframe>
     </div>
   </section>
-    <!-- NUEVA SECCIÓN RECOMENDACIONES -->
+
+  <!-- Recomendaciones -->
   <section id="recomendaciones" class="content-section" data-aos="fade-up">
     <h2>¿Qué llevar y recomendaciones?</h2>
-        <h3>¿Qué llevar?</h3>
-        <ul>
-            <li>Ropa normal y abrigada para la tarde: saco, chompa, rompe viento, bufanda, guantes, gorro.</li>
-            <li>Zapatos para montaña o deportivos.</li>
-            <li>Comida y bebidas.</li>
-            <li>Cámara fotográfica.</li>
-        </ul>
-        <h3>Otras recomendaciones</h3>
-        <ul>
-            <li>Está permitida la pesca deportiva.</li>
-            <li>No tirar basura en el lugar.</li>
-            <li>No está permitido el acceso de mascotas a la Reserva Ecológica Antisana.</li>
-        </ul>
-    </section>
+    <h3>¿Qué llevar?</h3>
+    <ul>
+      <li>Ropa abrigada: saco, chompa, bufanda, guantes, gorro.</li>
+      <li>Zapatos para montaña o deportivos.</li>
+      <li>Comida y bebidas.</li>
+      <li>Cámara fotográfica.</li>
+    </ul>
+    <h3>Otras recomendaciones</h3>
+    <ul>
+      <li>Está permitida la pesca deportiva.</li>
+      <li>No tirar basura en el lugar.</li>
+      <li>No se permite el ingreso de mascotas.</li>
+    </ul>
+  </section>
 
   <!-- Contacto -->
   <section id="contacto" class="content-section" data-aos="fade-up">
     <h2>Contacto</h2>
-    <p>¿Deseas visitarla con guía o saber más?</p>
     <p><strong>Email:</strong> Grupo3@lamica.ec</p>
     <p><strong>WhatsApp:</strong> +593 98 049 1612</p>
   </section>
@@ -168,13 +184,13 @@
     <p>&copy; 2025 Laguna La Mica - Todos los derechos reservados</p>
   </footer>
 
-  <!-- WhatsApp flotante -->
-  <a href="https://wa.me/593980491612" target="_blank" class="whatsapp-btn" title="Contáctanos por WhatsApp">💬</a>
+  <!-- WhatsApp -->
+  <a href="https://wa.me/593980491612" target="_blank" class="whatsapp-btn">💬</a>
 
-  <!-- Lightbox personalizado -->
+  <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
     <span class="close-btn" id="closeBtn">&times;</span>
-    <img src="" alt="Imagen ampliada" id="lightboxImg" />
+    <img src="" id="lightboxImg" alt="Imagen ampliada" />
   </div>
 
   <!-- Scripts -->
@@ -182,13 +198,11 @@
   <script>
     AOS.init({ duration: 1000, once: true });
 
-    // Lightbox personalizado para imágenes interactivas y galería
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
     const closeBtn = document.getElementById('closeBtn');
 
-    document.querySelectorAll('.galeria-grid img, .img-interactiva-grid img, .img-interactiva').forEach(img => {
-      img.style.cursor = 'pointer';
+    document.querySelectorAll('.img-interactiva, .img-interactiva-grid img, .galeria-grid img').forEach(img => {
       img.addEventListener('click', () => {
         lightbox.style.display = 'flex';
         lightboxImg.src = img.src;
@@ -205,6 +219,5 @@
       }
     });
   </script>
-
 </body>
 </html>
