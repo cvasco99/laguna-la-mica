@@ -6,70 +6,28 @@
   <title>Laguna La Mica - Reserva Ecológica Antisana</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <style>
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-image: url('img/fondo.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      opacity: 0.7;
-      z-index: -1;
-      filter: brightness(0.6);
-    }
-
-    body {
-      background-color: transparent;
-    }
-
-    .content-section {
-      background-color: rgba(255, 255, 255, 0.88);
-      color: #222;
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: 30px auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
-    .hero-content {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 30px;
-      border-radius: 10px;
-      color: white;
-    }
-
-    nav {
-      background-color: rgba(0, 105, 92, 0.95);
-    }
-
-    footer {
-      background-color: rgba(0, 77, 64, 0.95);
-    }
-  </style>
+  
 </head>
 <body>
 
- <!-- Navegación -->
-  <nav>
-  <ul>
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#sobre">La Laguna</a></li>
-    <li><a href="#biodiversidad">Biodiversidad</a></li>
-    <li><a href="#galeria">Galería</a></li>
-    <li><a href="#video">Video</a></li>
-    <li><a href="#ubicacion">Ubicación</a></li>
-    <li><a href="#recomendaciones">Recomendaciones</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li><a href="radiacion.html" target="_blank" class="btn-nav-secundario">Efectos de la radiación</a></li>
-  </ul>
-</nav>
+  <!-- Navegación -->
+  <nav class="nav-container">
+    <div class="logo">Laguna La Mica</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre">La Laguna</a></li>
+      <li><a href="#biodiversidad">Biodiversidad</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#recomendaciones">Recomendaciones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="radiacion.html" target="_blank" class="btn-nav-secundario">Efectos de la radiación</a></li>
+    </ul>
+  </nav>
 
-
-<!-- Hero -->
+  <!-- Hero -->
   <header class="hero" id="inicio">
     <div class="hero-content" data-aos="fade-up">
       <h1>Laguna La Mica</h1>
@@ -81,7 +39,7 @@
   <section id="sobre" class="content-section" data-aos="fade-up">
     <h2>La Laguna</h2>
     <p>
-      La Laguna La Mica, situada a más de 3900 metros sobre el nivel del mar, es un cuerpo de agua natural rodeado por el ecosistema único de páramo andino en la Reserva Ecológica Antisana. 
+      La Laguna La Mica, situada a más de 3900 metros sobre el nivel del mar, es un cuerpo de agua natural rodeado por el ecosistema único de páramo andino en la Reserva Ecológica Antisana.
       Fue construida y adaptada como reservorio para el abastecimiento de agua potable a Quito, pero además, representa un espacio vital para la conservación de la biodiversidad regional y un destino popular para ecoturistas y amantes de la naturaleza.
     </p>
     <p>
@@ -136,7 +94,7 @@
   <section id="video" class="content-section" data-aos="fade-up">
     <h2>Video documental</h2>
     <div class="video-responsive">
-      <iframe src="https://www.youtube.com/embed/wajfk2a702o?si=bKrRzLD8BnRfMnta" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/wajfk2a702o?si=bKrRzLD8BnRfMnta" allowfullscreen title="Video Documental Laguna La Mica"></iframe>
     </div>
   </section>
 
@@ -147,12 +105,15 @@
       Desde Quito toma la vía al Valle de los Chillos hacia Pintag, continúa por la carretera ecológica hasta la entrada de la Reserva Antisana. El acceso es controlado.
     </p>
     <div class="mapa">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100572.14829906917!2d-78.29239755358951!3d-0.543311836724657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5cb859988449b%3A0xa9143ae92fe92bf5!2sLaguna%20de%20Mica!5e1!3m2!1ses-419!2sec!4v1752028549728!5m2!1ses-419!2sec"
-        width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100572.14829906917!2d-78.29239755358951!3d-0.543311836724657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5cb859988449b%3A0xa9143ae92fe92bf5!2sLaguna%20de%20Mica!5e1!3m2!1ses-419!2sec!4v1752028549728!5m2!1ses-419!2sec"
+        width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" title="Mapa Laguna La Mica"></iframe>
     </div>
     <div class="video-responsive" style="margin-top: 30px;">
       <h3>Video guía para llegar</h3>
-      <iframe src="https://www.youtube.com/embed/JEFYMIsFQrE?si=RKJHPPGtQ-lNvI-3" allowfullscreen></iframe>
+      <iframe
+        src="https://www.youtube.com/embed/JEFYMIsFQrE?si=RKJHPPGtQ-lNvI-3"
+        allowfullscreen title="Video Guía Laguna La Mica"></iframe>
     </div>
   </section>
 
@@ -186,10 +147,10 @@
     <p>&copy; 2025 Laguna La Mica - Todos los derechos reservados</p>
   </footer>
 
-  <!-- Botones flotantes -->
+  <!-- Botón WhatsApp flotante -->
   <a href="https://wa.me/593980491612" class="whatsapp-btn" title="Contáctanos por WhatsApp">💬</a>
 
-  <!-- Lightbox -->
+  <!-- Lightbox para imágenes -->
   <div class="lightbox" id="lightbox">
     <span class="close-btn" id="closeBtn">&times;</span>
     <img src="" id="lightboxImg" alt="Imagen ampliada" />
@@ -200,6 +161,7 @@
   <script>
     AOS.init({ duration: 1000, once: true });
 
+    // Lightbox funcionalidad
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
     const closeBtn = document.getElementById('closeBtn');
@@ -216,26 +178,18 @@
     });
 
     lightbox.addEventListener('click', e => {
-      if (e.target === lightbox) {
-        lightbox.style.display = 'none';
-      }
+      if (e.target === lightbox) lightbox.style.display = 'none';
     });
-  </script>
 
-  <script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
-
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('open');
-  });
-
-  // Cerrar menú al hacer click en un enlace (móvil)
-  document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('open');
+    // Menú hamburguesa para móvil
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
     });
-  });
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => navMenu.classList.remove('open'));
+    });
   </script>
 
 </body>
