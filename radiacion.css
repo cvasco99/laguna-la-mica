@@ -1,30 +1,61 @@
+/* Fondo translúcido en todo el sitio */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('img/radiacion_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.5;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+/* Cuerpo general */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f2f9f8;
+  background-color: transparent;
   color: #333;
 }
 
-/* Hero */
-.hero {
-  background: url('img/radiacion_bg.jpg') no-repeat center center/cover;
+/* Botón fijo arriba a la derecha */
+.btn-superior-derecho {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: #004d40;
   color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+.btn-superior-derecho:hover {
+  background-color: #00695c;
+}
+
+/* Encabezado principal */
+.hero {
   height: 60vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
-  padding: 20px;
+  color: white;
+  padding: 40px 20px;
 }
-
-.hero-content {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 700px;
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
-
+.hero p {
+  font-size: 1.2em;
+}
 .btn-volver {
   margin-top: 20px;
   padding: 10px 20px;
@@ -34,20 +65,19 @@ body {
   border-radius: 6px;
   font-weight: bold;
   transition: background-color 0.3s;
-  display: inline-block;
 }
-
 .btn-volver:hover {
   background-color: #004d40;
   cursor: pointer;
 }
 
-/* Secciones */
+/* Secciones de contenido */
 .content-section {
+  background-color: rgba(255, 255, 255, 0.88);
+  color: #222;
   padding: 40px 20px;
   max-width: 1000px;
   margin: 30px auto;
-  background-color: white;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
@@ -58,7 +88,8 @@ body {
 }
 
 .content-section ul {
-  list-style: inside disc;
+  list-style: disc inside;
+  padding-left: 15px;
 }
 
 .content-section img {
@@ -68,12 +99,11 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
 .content-section img:hover {
   transform: scale(1.03);
 }
 
-/* Video */
+/* Video responsivo */
 .video-responsive {
   position: relative;
   padding-bottom: 56.25%;
@@ -81,14 +111,13 @@ body {
   overflow: hidden;
   margin-top: 20px;
 }
-
 .video-responsive iframe {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-/* Footer */
+/* Pie de página */
 footer {
   text-align: center;
   padding: 20px;
@@ -96,18 +125,22 @@ footer {
   color: white;
 }
 
-/* Responsive */
+/* Responsive design */
 @media screen and (max-width: 768px) {
-  .hero {
-    height: auto;
-    padding: 30px 15px;
+  .hero h1 {
+    font-size: 1.8em;
   }
 
-  .hero-content h1 {
-    font-size: 1.8em;
+  .btn-superior-derecho {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 
   .content-section {
     padding: 25px 15px;
+  }
+
+  .btn-volver {
+    font-size: 14px;
   }
 }

@@ -5,69 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Radiación y su Impacto en la Laguna La Mica</title>
   <link rel="stylesheet" href="radiacion.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
 
+  <!-- Fondo translúcido -->
+  <div class="background-overlay"></div>
+
+  <!-- Botón superior derecho -->
+  <a href="https://datos-4o92.onrender.com" target="_blank" class="btn-superior-derecho">📊 Estadísticas de radiación</a>
+
   <!-- Encabezado -->
   <header class="hero">
-    <div class="hero-content">
-      <h1>Radiación Solar y su Impacto en la Laguna La Mica</h1>
-      <p>Conoce qué es, cómo afecta y por qué es importante entender la radiación en ecosistemas de altura</p>
-      <a href="index.html" class="btn-volver" title="Volver a la página principal" target="_self">⬅ Volver al inicio</a>
-    </div>
+    <h1>Radiación Solar y su Impacto en la Laguna La Mica</h1>
+    <p>Conoce qué es, cómo afecta y por qué es importante entender la radiación en ecosistemas de altura</p>
+    <a href="index.html" class="btn-volver">⬅ Volver al inicio</a>
   </header>
 
-  <!-- Sección: Qué es la radiación -->
-  <section class="content-section" id="que-es">
+  <!-- ¿Qué es la radiación? -->
+  <section class="content-section" id="que-es" data-aos="fade-up">
     <h2>¿Qué es la radiación solar?</h2>
     <p>
-      La radiación solar es la energía emitida por el sol, que llega a la Tierra en forma de luz visible, rayos ultravioleta (UV) e infrarrojos. Esta radiación es vital para la vida, ya que regula el clima y permite la fotosíntesis.
+      La radiación solar es la energía que el sol emite hacia el espacio exterior y que llega a la Tierra en forma de ondas electromagnéticas. Esta energía es fundamental para mantener la vida en el planeta, ya que regula el clima, permite el crecimiento de las plantas y afecta numerosos procesos atmosféricos.
+    </p>
+    <p>
+      Se compone principalmente de luz visible, radiación infrarroja (calor) y rayos ultravioleta (UV). En zonas de alta altitud como la Laguna La Mica, la atmósfera es más delgada y filtra menos radiación, por lo que los niveles de exposición solar son más intensos.
     </p>
     <img src="img/sol_radiacion.jpg" alt="Radiación solar" class="img-interactiva">
   </section>
 
-  <!-- Sección: Efectos de la radiación -->
-  <section class="content-section" id="efectos">
+  <!-- Efectos -->
+  <section class="content-section" id="efectos" data-aos="fade-up">
     <h2>Efectos de la radiación solar</h2>
     <ul>
-      <li><strong>En la salud humana:</strong> Exposición excesiva a rayos UV puede causar quemaduras, envejecimiento prematuro y cáncer de piel.</li>
-      <li><strong>En los ecosistemas:</strong> Cambia los patrones de crecimiento de las plantas y afecta a los animales sensibles a los rayos UV.</li>
-      <li><strong>En los cuerpos de agua:</strong> Aumenta la evaporación y puede alterar la temperatura del agua, afectando a la biodiversidad acuática.</li>
+      <li><strong>Salud humana:</strong> Puede causar quemaduras, envejecimiento prematuro de la piel y cáncer si no se usa protección solar.</li>
+      <li><strong>Ecosistemas:</strong> Cambia el comportamiento de animales, afecta la fotosíntesis y altera ciclos naturales.</li>
+      <li><strong>Cuerpos de agua:</strong> Incrementa la evaporación y afecta la temperatura del agua, modificando su biodiversidad.</li>
+      <li><strong>Agricultura:</strong> Las plantas deben adaptarse para resistir mayor exposición solar, y algunas pueden marchitarse.</li>
     </ul>
     <img src="img/efectos_radiacion.jpg" alt="Efectos de la radiación" class="img-interactiva">
   </section>
 
-  <!-- Sección: Impacto en la Laguna La Mica -->
-  <section class="content-section" id="impacto">
+  <!-- Impacto local -->
+  <section class="content-section" id="impacto" data-aos="fade-up">
     <h2>Impacto en la Laguna La Mica</h2>
     <p>
-      La Laguna La Mica se encuentra a más de 3.900 msnm, donde la radiación solar es más intensa. Esto tiene efectos como:
+      La Laguna La Mica, ubicada en la Reserva Ecológica Antisana, es una zona de gran altitud (3.900 msnm) donde los efectos de la radiación son evidentes. La flora y fauna han desarrollado adaptaciones especiales:
     </p>
     <ul>
-      <li>Alta evaporación del agua.</li>
-      <li>Adaptaciones especiales en la flora como el frailejón para protegerse del sol.</li>
-      <li>Animales como el cóndor y el zorro deben buscar sombra o zonas frías.</li>
+      <li><strong>Flora:</strong> Plantas como el frailejón presentan pelusas y formas compactas que protegen del sol y del frío extremo.</li>
+      <li><strong>Fauna:</strong> Animales como el zorro andino y el cóndor regulan su exposición solar buscando sombra o cambiando de hábitat durante el día.</li>
+      <li><strong>Evaporación:</strong> La alta radiación aumenta la pérdida de agua, lo que afecta directamente el nivel de la laguna.</li>
     </ul>
     <img src="img/mica_radiacion.jpg" alt="Impacto de la radiación en la laguna" class="img-interactiva">
   </section>
 
-  <!-- Video informativo -->
-  <section class="content-section" id="video">
+  <!-- Protección -->
+  <section class="content-section" id="proteccion" data-aos="fade-up">
+    <h2>¿Cómo protegerse de la radiación en zonas altas?</h2>
+    <ul>
+      <li>Usa protector solar FPS 50+, incluso en días nublados.</li>
+      <li>Viste ropa de manga larga, gafas con protección UV y sombrero.</li>
+      <li>Evita la exposición directa al sol entre las 10h00 y 14h00.</li>
+      <li>Mantente hidratado y protege tus ojos con gafas adecuadas.</li>
+    </ul>
+  </section>
+
+  <!-- Datos adicionales -->
+  <section class="content-section" id="datos" data-aos="fade-up">
+    <h2>Importancia de medir la radiación</h2>
+    <p>
+      Medir los niveles de radiación solar permite tomar decisiones en salud pública, conservación ambiental y turismo ecológico. Los sistemas de monitoreo ayudan a prevenir riesgos y entender los cambios en el ecosistema.
+    </p>
+    <p>
+      Puedes visualizar las estadísticas actualizadas en el botón superior derecho: <strong>📊 Estadísticas de radiación</strong>.
+    </p>
+  </section>
+
+  <!-- Video -->
+  <section class="content-section" id="video" data-aos="fade-up">
     <h2>Video educativo sobre la radiación</h2>
     <div class="video-responsive">
-      <iframe src="https://www.youtube.com/embed/RaAxOpy8bDU" title="Radiación Solar explicada" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TBEo5z9Zeyk?si=SCbnF2px0tdPJNDq" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </section>
 
   <!-- Contacto -->
-  <section class="content-section" id="contacto">
+  <section class="content-section" id="contacto" data-aos="fade-up">
     <h2>¿Tienes dudas o quieres más información?</h2>
     <p>Contáctanos a través del correo <strong>info@lamica.ec</strong> o por <strong>WhatsApp: +593 98 049 1612</strong></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Radiación en La Mica - Proyecto Educativo</p>
   </footer>
 
+  <!-- AOS Scroll Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
 </body>
 </html>
