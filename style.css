@@ -137,6 +137,7 @@ h1 {
   margin-top: 20px;
 }
 
+
 /* Galería */
 .galeria-grid, .img-interactiva-grid {
   display: grid;
@@ -241,6 +242,7 @@ footer {
   transition: background-color 0.3s ease;
   text-decoration: none;
 }
+
 
 .btn-nav-secundario:hover {
   background-color: #002d27;
